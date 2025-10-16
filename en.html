@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Robson Luiz - PHP Web Developer">
+    <meta name="keywords" content="portfolio, web developer, PHP, Laravel, MySQL">
+    <meta name="author" content="Robson Luiz">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>Robson Luiz - PHP Web Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">RL</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="controls">
+                <a href="index.html" class="lang-badge" title="Mudar para Português">PT</a>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="section-content">
+            <h1>Hello, I'm Robson Luiz</h1>
+            <p class="subtitle">PHP Web Developer</p>
+            <p class="description">
+                Transforming ideas into elegant and functional web solutions
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                    <span>View Projects</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a web developer passionate about creating digital solutions that make a difference. With solid experience in PHP and modern web technologies, I have dedicated my career to developing robust, scalable, and easy-to-maintain applications.</p>
+                    <p>My focus is on delivering clean and efficient code, always seeking industry best practices. I believe that technology should be an ally in solving real problems, and that's what motivates me every day.</p>
+                </div>
+                <div class="about-image">
+                    <div class="profile-placeholder">
+                        <img src="images/profile/imagem_3.jpeg" alt="Robson Luiz">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-php"></i></div>
+                    <div class="skill-name">PHP</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-name">MySQL</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-name">HTML5</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-name">CSS3</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                    <div class="skill-name">Laravel</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                    <div class="skill-name">Tailwind CSS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-content">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/proj_1/proj_crud_php_oo.png" alt="PHP CRUD">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PHP CRUD</h3>
+                        <p class="project-description">
+                            User management CRUD developed with PHP (PDO), MySQL, HTML, CSS, and JavaScript, focused on web development studies and practice.
+                        </p>
+                        <a href="https://github.com/robson-luiz/proj_crud_php_oo" class="project-link" target="_blank">
+                            <span>View project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/proj_2/blog_pessoal_php.png" alt="Personal Blog">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Blog</h3>
+                        <p class="project-description">
+                            This is a personal blog project developed in PHP, featuring an admin panel, posts, categories, comments, search, and a responsive layout using Bootstrap 5.
+                        </p>
+                        <a href="https://github.com/robson-luiz/blog-pessoal-php" class="project-link" target="_blank">
+                            <span>View project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/proj_3/sistema_celke.png" alt="Site Celke">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Celke Website</h3>
+                        <p class="project-description">
+                            Website of the Celke education platform developed with Laravel 12 and Tailwind CSS, also the new version of the platform was developed.
+                        </p>
+                        <a href="https://celke.com.br/" class="project-link" target="_blank">
+                            <span>View project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-content">
+            <div class="contact-content">
+                <h2>Get in Touch</h2>
+                <p>I'm always open to new projects and opportunities. Let's talk!</p>
+                <div class="contact-methods">
+                    <a href="mailto:robsonluiz_6@hotmail.com" class="contact-item">
+                        <i class="contact-icon fas fa-envelope"></i>
+                        <span class="contact-text">robsonluiz_6@hotmail.com</span>
+                    </a>
+                    <a href="https://wa.me/5511913295246" target="_blank" class="contact-item">
+                        <i class="contact-icon fab fa-whatsapp"></i>
+                        <span class="contact-text">+55 11 91329-5246</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/robson-luiz" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/robsonluiz/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/robsonl_santos" target="_blank" title="X (antigo Twitter)">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Robson Luiz. All rights reserved.</p>
+    </footer>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
