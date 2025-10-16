@@ -1,5 +1,7 @@
 # Robson Luiz - Portfolio
 
+[![English Version](https://img.shields.io/badge/🇺🇸_English_Version-181717?style=for-the-badge&logo=github&logoColor=white)](./README.en.md)
+
 [![GitHub Pages](https://img.shields.io/badge/View%20Live-181717?style=for-the-badge&logo=github&logoColor=white)](https://robson-luiz.github.io/portfolio_robson)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -32,26 +34,6 @@ Portfólio profissional desenvolvido para apresentar meus projetos e habilidades
 - **Ferramentas**:
   - Git para controle de versão
   - GitHub Pages para hospedagem
-  - Visual Studio Code como editor
-
-## 📂 Estrutura do Projeto
-
-portfolio_robson/
-├── css/
-│   └── styles.css # Arquivo principal de estilos
-├── images/
-│   ├── proj_1/
-│   │   └── proj_crud_php_oo.png
-│   ├── proj_2/
-│   │   └── blog_pessoal_php.png
-│   └── proj_3/
-│       └── sistema_celke.png
-├── js/
-│   └── script.js # Arquivo principal de scripts
-├── en/
-│   └── index.html # Versão em Inglês
-└── index.html # Versão em Português
-
 
 ## 🌐 Acesso
 
