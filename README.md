@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <div align="center">
-  <img src="images/proj_1/proj_crud_php_oo.png" alt="Preview do Portfólio" width="80%">
+  <img src="images/preview_site/porfolio_robson.png" alt="Preview do Portfólio" width="80%">
 </div>
 
 ## 🌟 Sobre
