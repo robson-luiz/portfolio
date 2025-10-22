@@ -309,6 +309,26 @@ body.dark-mode .about-text {
     object-fit: cover;
 }
 
+/* About Section Links */
+.about-text a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.about-text a:hover {
+    color: var(--primary-light);
+}
+
+body.dark-mode .about-text a {
+    color: var(--primary-light);
+}
+
+body.dark-mode .about-text a:hover {
+    color: #5dade2;
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
