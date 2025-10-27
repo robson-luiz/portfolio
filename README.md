@@ -19,9 +19,10 @@ Portfólio profissional desenvolvido para apresentar meus projetos e habilidades
 - **Modo Claro/Escuro** - Alternância suave entre temas
 - **Idiomas** - Suporte a Português e Inglês
 - **Projetos em Destaque**:
-  - CRUD PHP (demonstração)
-  - Blog Pessoal (demonstração)
-  - Site Celke (demonstração)
+  - FM System - Sistema de gerenciamento financeiro pessoal (em desenvolvimento)
+  - Blog Pessoal - Blog desenvolvido em 2017, refatorado em 2025.
+  - Site Celke - nova versão do site e da plataforma da Celke, desenvolvido em 2025.
+  - SimplePage - Site com sistema administrativo, desenvolvido em 2017, refatorado em 2025.
 
 ## 🛠️ Tecnologias Utilizadas
 

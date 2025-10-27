@@ -118,17 +118,23 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/proj_1/proj_crud_php_oo.png" alt="PHP CRUD">
+                        <img src="images/proj_1/fm_system.png" alt="FM System">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">PHP CRUD</h3>
+                        <h3 class="project-title">FM System</h3>
                         <p class="project-description">
-                            User management CRUD developed with PHP (PDO), MySQL, HTML, CSS, and JavaScript, focused on web development studies and practice.
+                            Personal financial management system with Laravel, Tailwind CSS and MySQL.
                         </p>
-                        <a href="https://github.com/robson-luiz/proj_crud_php_oo" class="project-link" target="_blank">
-                            <span>View project</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <div class="project-actions">
+                            <a href="https://github.com/robson-luiz/fm-system-v2-laravel" class="project-link" target="_blank">
+                                <span>View project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <button class="project-details-btn" onclick="openImageModal('images/proj_1/fm_system.png', 'FM System', 'Personal financial management system in development with Laravel 12, Tailwind CSS, MySQL. Features include expense control, spending categories, detailed reports and 2-factor authentication login system for enhanced security.')">
+                                <span>View details</span>
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -138,12 +144,18 @@
                     <div class="project-content">
                         <h3 class="project-title">Personal Blog</h3>
                         <p class="project-description">
-                            This is a personal blog project developed in PHP, featuring an admin panel, posts, categories, comments, search, and a responsive layout using Bootstrap 5.
+                            Personal blog in PHP with administrative panel and complete system.
                         </p>
-                        <a href="https://github.com/robson-luiz/blog-pessoal-php" class="project-link" target="_blank">
-                            <span>View project</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <div class="project-actions">
+                            <a href="https://github.com/robson-luiz/blog-pessoal-php" class="project-link" target="_blank">
+                                <span>View project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <button class="project-details-btn" onclick="openImageModal('images/proj_2/blog_pessoal_php.png', 'Personal Blog', 'Complete personal blog developed in PHP with advanced administrative panel. Features include post management, categories, comments, search system and responsive layout with Bootstrap 5. Originally developed in 2017 and completely refactored in 2025.')">
+                                <span>View details</span>
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -153,12 +165,39 @@
                     <div class="project-content">
                         <h3 class="project-title">Celke platform website</h3>
                         <p class="project-description">
-                            Website of the Celke education platform developed with Laravel 12 and Tailwind CSS, also the new version of the platform was developed.
+                            Education platform website developed with Laravel and Tailwind CSS.
                         </p>
-                        <a href="https://celke.com.br/" class="project-link" target="_blank">
-                            <span>View project</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+                        <div class="project-actions">
+                            <a href="https://celke.com.br/" class="project-link" target="_blank">
+                                <span>View project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <button class="project-details-btn" onclick="openImageModal('images/proj_3/sistema_celke.png', 'Celke platform website', 'Complete website for the Celke education platform developed with Laravel 12 and Tailwind CSS. In addition to the institutional website, I participated in the development of the new version of the educational platform, including course system, student management and administrative area.')">
+                                <span>View details</span>
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/proj_4/site_simplepage.png" alt="SimplePage">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SimplePage</h3>
+                        <p class="project-description">
+                            Website with administrative system developed with PHP and Bootstrap.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/robson-luiz/simplepage" class="project-link" target="_blank">
+                                <span>View project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <button class="project-details-btn" onclick="openImageModal('images/proj_4/site_simplepage.png', 'SimplePage', 'Complete website with administrative system developed using PHP, MySQL, HTML5, CSS3, JavaScript and Bootstrap 5. Includes control panel, content management and fully responsive layout. Project originally developed in 2017 and completely refactored in 2025 with security and performance improvements.')">
+                                <span>View details</span>
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,6 +239,16 @@
         </div>
         <p>&copy; 2024 Robson Luiz. All rights reserved.</p>
     </footer>
+
+    <!-- Modal for enlarged images -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-title" id="modalTitle"></div>
+            <div class="modal-description" id="modalDescription"></div>
+        </div>
+    </div>
 
    <script src="js/script.js"></script>
 </body>

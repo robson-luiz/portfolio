@@ -19,9 +19,10 @@ Professional portfolio developed to showcase my projects and skills as a Front-e
 - **Light/Dark Mode** - Smooth theme switching
 - **Multi-language** - Support for Portuguese and English
 - **Featured Projects**:
-  - PHP CRUD (demo)
-  - Personal Blog (demo)
-  - Celke Website (demo)
+  - FM System - Personal financial management system (under development)
+  - Personal Blog - Blog developed in 2017, refactored in 2025.
+  - Celke Website - New version of the Celke website and platform, developed in 2025.
+  - SimplePage - Website with administrative system, developed in 2017, refactored in 2025.
 
 ## 🛠️ Technologies Used
 
