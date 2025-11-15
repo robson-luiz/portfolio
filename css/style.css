@@ -371,6 +371,59 @@ body.dark-mode .skill-icon {
     font-size: 1.1rem;
 }
 
+/* Tools Section */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tool-card {
+    background: var(--card-light);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--border-light);
+}
+
+body.dark-mode .tool-card {
+    background: var(--card-dark);
+    border-color: var(--border-dark);
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(44, 62, 80, 0.2);
+}
+
+.tool-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+body.dark-mode .tool-icon {
+    color: var(--primary-light);
+}
+
+.tool-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.tool-description {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+body.dark-mode .tool-description {
+    opacity: 0.9;
+    color: var(--text-dark-secondary);
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -687,6 +740,15 @@ body.dark-mode .project-details-btn:hover {
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 1rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .tool-card {
+        padding: 1.5rem;
     }
 
     .projects-grid {
