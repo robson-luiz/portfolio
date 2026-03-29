@@ -1,326 +1,604 @@
-<!DOCTYPE html>
+<!--
+Projeto: Portfólio de Robson Luiz (Landing Page de Conversão)
+
+Objetivo:
+Converter visitantes em contatos via WhatsApp, apresentando de forma clara:
+- O que Robson resolve
+- Como ajuda o cliente
+- Provas de experiência (projetos e trajetória)
+
+Diretrizes:
+- Conteúdo em português (index.html) e equivalente em inglês (en.html)
+- Mobile-first e totalmente responsivo
+- Foco em conversão (CTA para WhatsApp)
+- Design limpo, moderno e objetivo
+- Copywriting orientado a benefícios (não tecnologia)
+
+Estrutura da página:
+1. Home (Hero) — Headline + CTA principal (WhatsApp)
+2. Services — O que resolve + CTA
+3. About — Experiência, formação e posicionamento
+4. Skills — Prova técnica (complementar)
+5. Projects — Projetos com links reais
+6. Tools — Secundário (autoridade técnica)
+7. Contact — Conversão final
+
+Regras importantes:
+- Sempre incluir CTAs visíveis ao longo da página
+- Priorizar clareza e conversão acima de detalhes técnicos
+- Manter equivalência entre PT e EN
+- Seguir copilot-rules.md como fonte principal
+-->
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Robson Luiz - Desenvolvedor Web Laravel Freelancer">
-    <meta name="keywords" content="desenvolvedor web, PHP, Laravel, MySQL, HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, freelancer, Celke, portfolio, sistemas web">
-    <meta name="author" content="Robson Luiz">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Precisa de um site, sistema ou landing page para o seu negócio? Robson Luiz é desenvolvedor web freelancer com 8 anos de experiência. Solicite um orçamento."
+    />
+    <meta
+      name="keywords"
+      content="desenvolvedor web freelancer, criação de sites, sistemas web, landing page, PHP, Laravel, MySQL, HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, portfólio"
+    />
+    <meta name="author" content="Robson Luiz" />
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://robson-luiz.github.io/portfolio/">
-    <meta property="og:title" content="Robson Luiz - Desenvolvedor Web Laravel Freelancer">
-    <meta property="og:description" content="Desenvolvedor web com 8 anos de experiência em PHP, Laravel, Tailwind CSS e MySQL. Criando sites e sistemas práticos e responsivos.">
-    <meta property="og:image" content="https://robson-luiz.github.io/portfolio/images/profile/imagem_3.jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:site_name" content="Robson Luiz - Desenvolvedor Web">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robsonlsantos.com/" />
+    <meta
+      property="og:title"
+      content="Robson Luiz | Criação de Sites e Sistemas Web | Freelancer"
+    />
+    <meta
+      property="og:description"
+      content="Precisa de um site, sistema ou landing page para o seu negócio? Robson Luiz é freelancer com 8 anos de experiência. Solicite um orçamento."
+    />
+    <meta
+      property="og:image"
+      content="https://robsonlsantos.com/assets/images/seo/portfolio_seo.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Robson Luiz | Freelancer Web" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://robson-luiz.github.io/portfolio/">
-    <meta property="twitter:title" content="Robson Luiz - Desenvolvedor Web Laravel Freelancer">
-    <meta property="twitter:description" content="Desenvolvedor web com 8 anos de experiência em PHP, Laravel, Tailwind CSS e MySQL. Criando sites e sistemas práticos e responsivos.">
-    <meta property="twitter:image" content="https://robson-luiz.github.io/portfolio/images/profile/imagem_3.jpeg">
-    <meta property="twitter:creator" content="@robsonl_santos">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://robsonlsantos.com/" />
+    <meta
+      property="twitter:title"
+      content="Robson Luiz | Criação de Sites e Sistemas Web | Freelancer"
+    />
+    <meta
+      property="twitter:description"
+      content="Precisa de um site, sistema ou landing page para o seu negócio? Robson Luiz é freelancer com 8 anos de experiência. Solicite um orçamento."
+    />
+    <meta
+      property="twitter:image"
+      content="https://robsonlsantos.com/assets/images/seo/portfolio_seo.png"
+    />
+    <meta property="twitter:creator" content="@robsonl_santos" />
 
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://robson-luiz.github.io/portfolio/">
-    <title>Robson Luiz - Desenvolvedor Web Laravel Freelancer</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="canonical" href="https://robsonlsantos.com/" />
+    <title>Robson Luiz | Criação de Sites e Sistemas Web | Freelancer</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">RL</div>
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#tools">Ferramentas</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <div class="controls">
-                <a href="en.html" class="lang-badge" title="Switch to English">EN</a>
-                <button class="theme-toggle" onclick="toggleTheme()" title="Alternar tema">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">RL</div>
+        <ul class="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#tools">Ferramentas</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="controls">
+          <a href="en.html" class="lang-badge" title="Switch to English">EN</a>
+          <button
+            class="theme-toggle"
+            onclick="toggleTheme()"
+            title="Alternar tema"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button
+            class="hamburger"
+            onclick="toggleMenu()"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
     </header>
 
     <!-- Home Section -->
     <section id="home">
-        <div class="section-content">
-            <h1>Olá, eu sou Robson Luiz</h1>
-            <p class="subtitle">Desenvolvedor Web Laravel Freelancer</p>
-            <p class="description">
-                Desenvolvimento de sites e sistemas web com PHP, Laravel, Tailwind CSS e MySQL.
-            </p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-code"></i>
-                    <span>Ver Projetos</span>
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i>
-                    <span>Entre em Contato</span>
-                </a>
-            </div>
+      <div class="section-content">
+        <h1>Crio sites e sistemas web sob medida para o seu negócio</h1>
+        <p class="subtitle">
+          Desenvolvimento com PHP e Laravel focado em soluções práticas e
+          funcionais
+        </p>
+        <p class="description">
+          Do site institucional ao sistema completo, desenvolvo aplicações
+          responsivas, organizadas e pensadas para resolver problemas reais do
+          seu dia a dia.
+        </p>
+        <p class="hero-availability">
+          <i class="fas fa-circle"></i> Disponível para novos projetos
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://wa.me/5511913295246?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span>Solicitar orçamento agora</span>
+          </a>
+          <a href="#services" class="btn btn-secondary">
+            <i class="fas fa-briefcase"></i>
+            <span>Ver Serviços</span>
+          </a>
         </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="section-content">
+        <h2>Serviços</h2>
+        <p class="services-subtitle">
+          Soluções sob medida para o seu negócio crescer na internet
+        </p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-globe"></i></div>
+            <div class="service-title">Sites Profissionais</div>
+            <div class="service-description">
+              Seu negócio merece uma presença online que transmite
+              credibilidade. Crio sites rápidos, responsivos e preparados para
+              ser encontrados no Google.
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-cogs"></i></div>
+            <div class="service-title">Sistemas Web</div>
+            <div class="service-description">
+              Processos manuais custam tempo e dinheiro. Desenvolvo sistemas sob
+              medida que automatizam e organizam o seu negócio de forma simples
+              e eficiente.
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-rocket"></i></div>
+            <div class="service-title">Landing Pages</div>
+            <div class="service-description">
+              Precisa vender mais pela internet? Crio páginas focadas em
+              conversão, feitas para transformar visitantes em clientes reais.
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-wrench"></i></div>
+            <div class="service-title">Manutenção e Suporte</div>
+            <div class="service-description">
+              Site desatualizado ou com problemas? Ofereço suporte ágil e
+              melhorias contínuas para manter tudo funcionando sem dor de
+              cabeça.
+            </div>
+          </div>
+        </div>
+        <div class="services-cta">
+          <p class="services-cta-text">
+            Disponível para novos projetos — resposta em até 24h
+          </p>
+          <a
+            href="https://wa.me/5511913295246?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span>Solicitar orçamento agora</span>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="section-content">
-            <h2>Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Sou Robson Luiz, desenvolvedor web com 8 anos de experiência em PHP, Laravel, Tailwind CSS, HTML5, CSS3, JavaScript, MySQL, Bootstrap. Atualmente, colaboro com a <a href="https://celke.com.br/" target="_blank">Celke</a> (plataforma de cursos online de desenvolvimento web) onde edito videoaulas, tutoriais, ofereço suporte aos alunos e participo do desenvolvimento do site e da nova plataforma educacional.</p> 
-                    <p>Gosto de criar sites e sistemas práticos e responsivos, sempre priorizando código limpo e boas práticas. Meus projetos no GitHub refletem minha dedicação a entregar soluções eficientes e evoluir constantemente.</p>
-                </div>
-                <div class="about-image">
-                    <div class="profile-placeholder">
-                        <img src="images/profile/imagem_3.jpeg" alt="Robson Luiz">
-                    </div>
-                </div>
+      <div class="section-content">
+        <h2>Sobre Mim</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Se você precisa de um site profissional, um sistema que organize
+              seu negócio ou uma landing page que realmente gere resultados,
+              posso te ajudar. Sou Robson Luiz, desenvolvedor web com 8 anos de
+              experiência criando sites e sistemas sob medida, sempre com foco
+              em desempenho, usabilidade e resultado real.
+            </p>
+            <p>
+              Sou graduado em Análise e Desenvolvimento de Sistemas e, ao longo
+              da minha trajetória, atuei em projetos como plataforma
+              educacional, sistema de gestão financeira e página de conversão.
+              Essa experiência me deu uma visão prática para entender o que cada
+              negócio realmente precisa — e não apenas o que é pedido
+              inicialmente.
+            </p>
+            <p>
+              Atualmente atuo como freelancer, desenvolvendo soluções completas
+              com PHP e Laravel, desde o planejamento até a entrega final,
+              sempre com foco em qualidade e eficiência. Prezo por código limpo,
+              comunicação clara e cumprimento de prazos. Se você busca alguém
+              comprometido em transformar sua ideia em algo funcional e
+              eficiente, vamos conversar.
+            </p>
+            <p>
+              Atuo como freelancer e estou disponível para novos projetos.
+              <a href="#services" class="cta-inline">Veja os serviços</a> ou
+              <a
+                href="https://wa.me/5511913295246?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+                class="cta-inline"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-whatsapp"></i> fale pelo WhatsApp</a
+              >.
+            </p>
+          </div>
+          <div class="about-image">
+            <div class="profile-placeholder">
+              <img src="images/profile/imagem_3.jpeg" alt="Robson Luiz" />
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <div class="section-content">
-            <h2>Habilidades</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-php"></i></div>
-                    <div class="skill-name">PHP</div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-laravel"></i></div>
-                    <div class="skill-name">Laravel</div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-wind"></i></div>
-                    <div class="skill-name">Tailwind CSS</div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-database"></i></div>
-                    <div class="skill-name">MySQL</div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                    <div class="skill-name">HTML5</div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                    <div class="skill-name">CSS3</div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
-                    <div class="skill-name">Bootstrap</div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-js"></i></div>
-                    <div class="skill-name">JavaScript</div>
-                </div>
-            </div>
+      <div class="section-content">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-php"></i></div>
+            <div class="skill-name">PHP</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+            <div class="skill-name">Laravel</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-wind"></i></div>
+            <div class="skill-name">Tailwind CSS</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <div class="skill-name">MySQL</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <div class="skill-name">HTML5</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <div class="skill-name">CSS3</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+            <div class="skill-name">Bootstrap</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <div class="skill-name">JavaScript</div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Tools Section -->
     <section id="tools">
-        <div class="section-content">
-            <h2>Ferramentas de Desenvolvimento</h2>
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="fab fa-microsoft"></i></div>
-                    <div class="tool-name">VS Code</div>
-                    <div class="tool-description">Editor com Copilot</div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="fas fa-terminal"></i></div>
-                    <div class="tool-name">Cursor Editor</div>
-                    <div class="tool-description">Editor com IA</div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="fas fa-wind"></i></div>
-                    <div class="tool-name">Windsurf</div>
-                    <div class="tool-description">Editor inteligente</div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="fas fa-robot"></i></div>
-                    <div class="tool-name">Grok</div>
-                    <div class="tool-description">Assistente de IA</div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="fas fa-brain"></i></div>
-                    <div class="tool-name">ChatGPT</div>
-                    <div class="tool-description">Assistente de IA</div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="fas fa-robot"></i></div>
-                    <div class="tool-name">Gemini</div>
-                    <div class="tool-description">IA do Google</div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="fab fa-git-alt"></i></div>
-                    <div class="tool-name">Git</div>
-                    <div class="tool-description">Controle de versão</div>
-                </div>
-                <div class="tool-card">
-                    <div class="tool-icon"><i class="fab fa-php"></i></div>
-                    <div class="tool-name">Composer</div>
-                    <div class="tool-description">Gerenciador PHP</div>
-                </div>
-            </div>
+      <div class="section-content">
+        <h2>Ferramentas de Desenvolvimento</h2>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fab fa-microsoft"></i></div>
+            <div class="tool-name">VS Code</div>
+            <div class="tool-description">Editor com Copilot</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fas fa-terminal"></i></div>
+            <div class="tool-name">Cursor Editor</div>
+            <div class="tool-description">Editor com IA</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fas fa-wind"></i></div>
+            <div class="tool-name">Windsurf</div>
+            <div class="tool-description">Editor inteligente</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fas fa-robot"></i></div>
+            <div class="tool-name">Grok</div>
+            <div class="tool-description">Assistente de IA</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fas fa-brain"></i></div>
+            <div class="tool-name">ChatGPT</div>
+            <div class="tool-description">Assistente de IA</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fas fa-robot"></i></div>
+            <div class="tool-name">Gemini</div>
+            <div class="tool-description">IA do Google</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fab fa-git-alt"></i></div>
+            <div class="tool-name">Git</div>
+            <div class="tool-description">Controle de versão</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fab fa-php"></i></div>
+            <div class="tool-name">Composer</div>
+            <div class="tool-description">Gerenciador PHP</div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="section-content">
-            <h2>Meus Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/proj_1/fm_system.png" alt="FM System">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">FM System</h3>
-                        <p class="project-description">
-                            Sistema de gerenciamento financeiro pessoal com Laravel, Tailwind CSS e MySQL.
-                        </p>
-                        <div class="project-actions">
-                            <a href="https://github.com/robson-luiz/fm-system-v2-laravel" class="project-link" target="_blank">
-                                <span>Ver projeto</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <button class="project-details-btn" onclick="openImageModal('images/proj_1/fm_system.png', 'FM System', 'Sistema de gerenciamento financeiro pessoal em desenvolvimento com Laravel 12, Tailwind CSS, MySQL. Funcionalidades incluem controle de despesas, categorias de gastos, relatórios detalhados e sistema de login com autenticação de 2 fatores para maior segurança.')">
-                                <span>Ver detalhes</span>
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/proj_2/blog_pessoal_php.png" alt="Blog Pessoal">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Blog Pessoal</h3>
-                        <p class="project-description">
-                            Blog pessoal em PHP com painel administrativo e sistema completo.
-                        </p>
-                        <div class="project-actions">
-                            <a href="https://github.com/robson-luiz/blog-pessoal-php" class="project-link" target="_blank">
-                                <span>Ver projeto</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <button class="project-details-btn" onclick="openImageModal('images/proj_2/blog_pessoal_php.png', 'Blog Pessoal', 'Blog pessoal completo desenvolvido em PHP com painel administrativo avançado. Funcionalidades incluem gerenciamento de posts, categorias, comentários, sistema de busca e layout responsivo com Bootstrap 5. Originalmente desenvolvido em 2017 e completamente refatorado em 2025.')">
-                                <span>Ver detalhes</span>
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/proj_3/sistema_celke.png" alt="Site Celke">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site da plataforma Celke</h3>
-                        <p class="project-description">
-                            Site da plataforma de ensino desenvolvido com Laravel e Tailwind CSS.
-                        </p>
-                        <div class="project-actions">
-                            <a href="https://celke.com.br/" class="project-link" target="_blank">
-                                <span>Ver projeto</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <button class="project-details-btn" onclick="openImageModal('images/proj_3/sistema_celke.png', 'Site da plataforma Celke', 'Website completo da plataforma de ensino Celke desenvolvido com Laravel 12 e Tailwind CSS. Além do site institucional, participei do desenvolvimento da nova versão da plataforma educacional, incluindo sistema de cursos, gerenciamento de alunos e área administrativa.')">
-                                <span>Ver detalhes</span>
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/proj_4/site_simplepage.png" alt="SimplePage">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">SimplePage</h3>
-                        <p class="project-description">
-                            Website com sistema administrativo desenvolvido com PHP e Bootstrap.
-                        </p>
-                        <div class="project-actions">
-                            <a href="https://github.com/robson-luiz/simplepage" class="project-link" target="_blank">
-                                <span>Ver projeto</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <button class="project-details-btn" onclick="openImageModal('images/proj_4/site_simplepage.png', 'SimplePage', 'Website completo com sistema administrativo desenvolvido utilizando PHP, MySQL, HTML5, CSS3, JavaScript e Bootstrap 5. Inclui painel de controle, gerenciamento de conteúdo e layout totalmente responsivo. Projeto originalmente desenvolvido em 2017 e completamente refatorado em 2025 com melhorias de segurança e performance.')">
-                                <span>Ver detalhes</span>
-                                <i class="fas fa-search-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+      <div class="section-content">
+        <h2>Meus Projetos</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/proj_1/fm_system.png" alt="FM System" />
             </div>
+            <div class="project-content">
+              <h3 class="project-title">FM System</h3>
+              <p class="project-description">
+                Sistema de gerenciamento financeiro pessoal com Laravel,
+                Tailwind CSS e MySQL.
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/robson-luiz/fm-system-v2-laravel"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Ver projeto</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <button
+                  class="project-details-btn"
+                  onclick="
+                    openImageModal(
+                      'images/proj_1/fm_system.png',
+                      'FM System',
+                      'Sistema de gerenciamento financeiro pessoal em desenvolvimento com Laravel 12, Tailwind CSS, MySQL. Funcionalidades incluem controle de despesas, categorias de gastos, relatórios detalhados e sistema de login com autenticação de 2 fatores para maior segurança.',
+                    )
+                  "
+                >
+                  <span>Ver detalhes</span>
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="images/proj_2/blog_pessoal_php.png"
+                alt="Blog Pessoal"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Blog Pessoal</h3>
+              <p class="project-description">
+                Blog pessoal em PHP com painel administrativo e sistema
+                completo.
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/robson-luiz/blog-pessoal-php"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Ver projeto</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <button
+                  class="project-details-btn"
+                  onclick="
+                    openImageModal(
+                      'images/proj_2/blog_pessoal_php.png',
+                      'Blog Pessoal',
+                      'Blog pessoal completo desenvolvido em PHP com painel administrativo avançado. Funcionalidades incluem gerenciamento de posts, categorias, comentários, sistema de busca e layout responsivo com Bootstrap 5. Originalmente desenvolvido em 2017 e completamente refatorado em 2025.',
+                    )
+                  "
+                >
+                  <span>Ver detalhes</span>
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/proj_3/sistema_celke.png" alt="Site Celke" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Site da plataforma Celke</h3>
+              <p class="project-description">
+                Site da plataforma de ensino desenvolvido com Laravel e Tailwind
+                CSS.
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://celke.com.br/"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Ver projeto</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <button
+                  class="project-details-btn"
+                  onclick="
+                    openImageModal(
+                      'images/proj_3/sistema_celke.png',
+                      'Site da plataforma Celke',
+                      'Website completo da plataforma de ensino Celke desenvolvido com Laravel 12 e Tailwind CSS. Além do site institucional, participei do desenvolvimento da nova versão da plataforma educacional, incluindo sistema de cursos, gerenciamento de alunos e área administrativa.',
+                    )
+                  "
+                >
+                  <span>Ver detalhes</span>
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/proj_4/site_simplepage.png" alt="SimplePage" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">SimplePage</h3>
+              <p class="project-description">
+                Website com sistema administrativo desenvolvido com PHP e
+                Bootstrap.
+              </p>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/robson-luiz/simplepage"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Ver projeto</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <button
+                  class="project-details-btn"
+                  onclick="
+                    openImageModal(
+                      'images/proj_4/site_simplepage.png',
+                      'SimplePage',
+                      'Website completo com sistema administrativo desenvolvido utilizando PHP, MySQL, HTML5, CSS3, JavaScript e Bootstrap 5. Inclui painel de controle, gerenciamento de conteúdo e layout totalmente responsivo. Projeto originalmente desenvolvido em 2017 e completamente refatorado em 2025 com melhorias de segurança e performance.',
+                    )
+                  "
+                >
+                  <span>Ver detalhes</span>
+                  <i class="fas fa-search-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="section-content">
-            <div class="contact-content">
-                <h2>Entre em Contato</h2>
-                <p>Estou sempre aberto a novos projetos e oportunidades. Vamos conversar!</p>
-                <div class="contact-methods">
-                    <a href="mailto:robsonluiz_6@hotmail.com" class="contact-item">
-                        <i class="contact-icon fas fa-envelope"></i>
-                        <span class="contact-text">robsonluiz_6@hotmail.com</span>
-                    </a>
-                    <a href="https://wa.me/5511913295246" target="_blank" class="contact-item">
-                        <i class="contact-icon fab fa-whatsapp"></i>
-                        <span class="contact-text">+55 11 91329-5246</span>
-                    </a>
-                </div>
-            </div>
+      <div class="section-content">
+        <div class="contact-content">
+          <h2>Vamos conversar?</h2>
+          <p>
+            Disponível para novos projetos e freelas. Entre em contato e receba
+            um orçamento sem compromisso.
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:robsonluiz_6@hotmail.com" class="contact-item">
+              <i class="contact-icon fas fa-envelope"></i>
+              <span class="contact-text">robsonluiz_6@hotmail.com</span>
+            </a>
+            <a
+              href="https://wa.me/5511913295246"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-item"
+            >
+              <i class="contact-icon fab fa-whatsapp"></i>
+              <span class="contact-text">+55 11 91329-5246</span>
+            </a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="social-links">
-            <a href="https://github.com/robson-luiz" target="_blank" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/robson-luiz" target="_blank" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://x.com/robsonl_santos" target="_blank" title="X (antigo Twitter)">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-        <p>&copy; 2024 Robson Luiz. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a
+          href="https://github.com/robson-luiz"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/robsonluiz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://x.com/robsonl_santos"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="X (antigo Twitter)"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <p>&copy; 2024 Robson Luiz. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Modal para imagens ampliadas -->
     <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeImageModal()">&times;</span>
-            <img id="modalImage" src="" alt="">
-            <div class="modal-title" id="modalTitle"></div>
-            <div class="modal-description" id="modalDescription"></div>
-        </div>
+      <div class="modal-content">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img id="modalImage" src="" alt="" />
+        <div class="modal-title" id="modalTitle"></div>
+        <div class="modal-description" id="modalDescription"></div>
+      </div>
     </div>
 
+    <!-- Botão flutuante WhatsApp -->
+    <a
+      id="whatsapp-float"
+      href="https://wa.me/5511913295246?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

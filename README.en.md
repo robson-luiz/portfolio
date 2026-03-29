@@ -2,7 +2,7 @@
 
 [![Português Version](https://img.shields.io/badge/🇧🇷_Português_Version-181717?style=for-the-badge&logo=github&logoColor=white)](./README.md)
 
-[![View Live](https://img.shields.io/badge/View%20Live-181717?style=for-the-badge&logo=github&logoColor=white)](https://robson-luiz.github.io/portfolio)
+[![View Live](https://img.shields.io/badge/View%20Live-181717?style=for-the-badge&logo=github&logoColor=white)](https://robsonlsantos.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <div align="center">
@@ -38,8 +38,8 @@ Professional portfolio developed to showcase my projects and skills as a Front-e
 
 ## 🌐 Live Demo
 
-- **English**: [https://robson-luiz.github.io/portfolio/en.html](https://robson-luiz.github.io/portfolio/en.html)
-- **Português**: [https://robson-luiz.github.io/portfolio/](https://robson-luiz.github.io/portfolio/)
+- **English**: [https://robsonlsantos.com/en.html](https://robsonlsantos.com/en.html)
+- **Português**: [https://robsonlsantos.com/](https://robsonlsantos.com/)
 
 ## 📞 Contact
 
