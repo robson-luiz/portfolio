@@ -62,13 +62,28 @@ nav {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary);
+  display: flex;
+  align-items: center;
 }
 
-body.dark-mode .logo {
-  color: var(--primary-light);
+.logo img {
+  height: 32px;
+  width: auto;
+  display: block;
+  transition:
+    filter 0.3s,
+    opacity 0.3s;
+}
+
+body:not(.dark-mode) .logo img {
+  /* Invert the dark logo so it reads clearly on the light navbar */
+  /*filter: invert(1) brightness(0.8);*/
+  /*opacity: 0.85;*/
+  background: rgba(0, 0, 0, 0.04);
+}
+
+body.dark-mode .logo img {
+  filter: none;
 }
 
 .nav-links {
@@ -231,6 +246,32 @@ h2 {
 /* Home Section */
 #home {
   text-align: center;
+  position: relative;
+  background-image: url("../images/bg/home-light.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55);
+  z-index: 0;
+}
+
+#home .section-content {
+  position: relative;
+  z-index: 1;
+}
+
+body.dark-mode #home {
+  background-image: url("../images/bg/home-dark.png");
+}
+
+body.dark-mode #home::before {
+  background: rgba(0, 0, 0, 0.62);
 }
 
 .subtitle {
@@ -561,7 +602,13 @@ body.dark-mode .project-link {
 }
 
 .contact-content p {
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+body.dark-mode .contact-content p {
   color: var(--text-dark-secondary);
+  opacity: 1;
 }
 
 .contact-methods {
@@ -1074,5 +1121,14 @@ body.dark-mode .about-text .cta-inline {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
+  }
+
+  /* Slightly stronger overlay on mobile for readability */
+  #home::before {
+    background: rgba(255, 255, 255, 0.65);
+  }
+
+  body.dark-mode #home::before {
+    background: rgba(0, 0, 0, 0.7);
   }
 }
