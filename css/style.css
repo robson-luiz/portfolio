@@ -67,23 +67,9 @@ nav {
 }
 
 .logo img {
-  height: 32px;
+  height: 28px;
   width: auto;
   display: block;
-  transition:
-    filter 0.3s,
-    opacity 0.3s;
-}
-
-body:not(.dark-mode) .logo img {
-  /* Invert the dark logo so it reads clearly on the light navbar */
-  /*filter: invert(1) brightness(0.8);*/
-  /*opacity: 0.85;*/
-  background: rgba(0, 0, 0, 0.04);
-}
-
-body.dark-mode .logo img {
-  filter: none;
 }
 
 .nav-links {
@@ -257,7 +243,12 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.55);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.65) 45%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
   z-index: 0;
 }
 
@@ -271,7 +262,12 @@ body.dark-mode #home {
 }
 
 body.dark-mode #home::before {
-  background: rgba(0, 0, 0, 0.62);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.65) 45%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
 }
 
 .subtitle {
@@ -417,8 +413,8 @@ body.dark-mode .about-text a:hover {
   border-radius: 12px;
   text-align: center;
   transition:
-    transform 0.3s,
-    box-shadow 0.3s;
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid var(--border-light);
 }
 
@@ -428,7 +424,7 @@ body.dark-mode .skill-card {
 }
 
 .skill-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(44, 62, 80, 0.2);
 }
 
@@ -461,8 +457,8 @@ body.dark-mode .skill-icon {
   border-radius: 12px;
   text-align: center;
   transition:
-    transform 0.3s,
-    box-shadow 0.3s;
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid var(--border-light);
 }
 
@@ -472,7 +468,7 @@ body.dark-mode .tool-card {
 }
 
 .tool-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(44, 62, 80, 0.2);
 }
 
@@ -514,8 +510,8 @@ body.dark-mode .tool-description {
   border-radius: 12px;
   overflow: hidden;
   transition:
-    transform 0.3s,
-    box-shadow 0.3s;
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid var(--border-light);
 }
 
@@ -525,8 +521,8 @@ body.dark-mode .project-card {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(44, 62, 80, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(44, 62, 80, 0.2);
 }
 
 .project-image {
@@ -847,8 +843,8 @@ body.dark-mode .services-subtitle {
   border-radius: 12px;
   text-align: center;
   transition:
-    transform 0.3s,
-    box-shadow 0.3s;
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid var(--border-light);
 }
 
@@ -858,7 +854,7 @@ body.dark-mode .service-card {
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(44, 62, 80, 0.2);
 }
 
@@ -997,6 +993,10 @@ body.dark-mode .about-text .cta-inline {
     padding: 0.75rem 1.25rem;
   }
 
+  .logo img {
+    height: 24px;
+  }
+
   .lang-badge {
     padding: 0.4rem 0.75rem;
     font-size: 0.85rem;
@@ -1125,10 +1125,44 @@ body.dark-mode .about-text .cta-inline {
 
   /* Slightly stronger overlay on mobile for readability */
   #home::before {
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.8);
   }
 
   body.dark-mode #home::before {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.78);
   }
+}
+
+/* ==========================================
+   Card Hover — Padrão unificado
+   ========================================== */
+
+.skill-card,
+.tool-card,
+.project-card,
+.service-card,
+.contact-item {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  will-change: transform;
+}
+
+.skill-card:hover,
+.tool-card:hover,
+.project-card:hover,
+.service-card:hover,
+.contact-item:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.15),
+    0 20px 45px rgba(44, 62, 80, 0.25);
+}
+
+.project-card .project-image img {
+  transition: transform 0.35s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
 }

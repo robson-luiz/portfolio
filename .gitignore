@@ -2,7 +2,7 @@
 README.txt
 copilot-rules.md
 .gitignore
-
+PLANEJAMENTO_LARAVEL.md
 # Logs
 *.log
 npm-debug.log*
