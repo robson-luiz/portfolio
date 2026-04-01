@@ -6,23 +6,28 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 <div align="center">
-  <img src="images/preview_site/porfolio_robson.png" alt="Preview do Portfólio" width="80%">
+  <img src="images/preview_site/portfolio_robson.png" alt="Preview do Portfólio" width="80%">
 </div>
 
 ## 🌟 Sobre
 
-Portfólio profissional desenvolvido para apresentar meus projetos e habilidades como Desenvolvedor Web Front-end, com foco em criar experiências interativas e responsivas.
+Portfólio profissional desenvolvido para apresentar meus projetos e habilidades como Desenvolvedor Web Freelancer, com foco em criar sites, sistemas web e landing pages sob medida para negócios.
 
 ## 🚀 Recursos
 
 - **Design Responsivo** - Layout que se adapta a diferentes tamanhos de tela
 - **Modo Claro/Escuro** - Alternância suave entre temas
 - **Idiomas** - Suporte a Português e Inglês
+- **Serviços Oferecidos**:
+  - Sites Profissionais - Sites rápidos, responsivos e preparados para SEO
+  - Sistemas Web - Sistemas sob medida para automatizar e organizar negócios
+  - Landing Pages - Páginas focadas em conversão
+  - Manutenção e Suporte - Atualização e melhorias contínuas
 - **Projetos em Destaque**:
-  - FM System - Sistema de gerenciamento financeiro pessoal (em desenvolvimento)
-  - Blog Pessoal - Blog desenvolvido em 2017, refatorado em 2025.
-  - Site Celke - nova versão do site e da plataforma da Celke, desenvolvido em 2025.
-  - SimplePage - Site com sistema administrativo, desenvolvido em 2017, refatorado em 2025.
+  - FM System - Sistema de gerenciamento financeiro pessoal com Laravel 12, Tailwind CSS e MySQL
+  - Blog Pessoal - Blog em PHP com painel administrativo, desenvolvido em 2017 e refatorado em 2025
+  - Site Celke - Nova versão do site e da plataforma da Celke, desenvolvido com Laravel 12 e Tailwind CSS
+  - SimplePage - Site com sistema administrativo em PHP e Bootstrap, desenvolvido em 2017 e refatorado em 2025
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -33,6 +38,8 @@ Portfólio profissional desenvolvido para apresentar meus projetos e habilidades
   - Font Awesome (ícones)
 
 - **Ferramentas**:
+  - VS Code (com GitHub Copilot)
+  - ChatGPT / Grok / Gemini (assistentes de IA)
   - Git para controle de versão
   - GitHub Pages para hospedagem
 
@@ -47,6 +54,7 @@ Portfólio profissional desenvolvido para apresentar meus projetos e habilidades
 - **WhatsApp**: +55 11 91329-5246
 - **LinkedIn**: [robsonluiz](https://www.linkedin.com/in/robsonluiz/)
 - **GitHub**: [robson-luiz](https://github.com/robson-luiz)
+- **X (Twitter)**: [@robsonl_santos](https://x.com/robsonl_santos)
 
 ---
 
